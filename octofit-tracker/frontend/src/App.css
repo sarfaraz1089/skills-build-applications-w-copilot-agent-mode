@@ -1,0 +1,159 @@
+body {
+  background: linear-gradient(180deg, #0b1f45 0%, #122c63 45%, #1b3c82 100%);
+  color: #f8f9fa;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.App {
+  text-align: left;
+}
+
+.navbar {
+  background-color: rgba(255, 255, 255, 0.92) !important;
+  backdrop-filter: blur(12px);
+}
+
+.navbar-brand {
+  color: #1b3c82 !important;
+}
+
+.navbar-brand:hover,
+.nav-link:hover {
+  color: #0d6efd !important;
+}
+
+.nav-link {
+  color: #4b6aac !important;
+}
+
+.navbar-nav .nav-link.active {
+  color: #0d6efd !important;
+  font-weight: 600;
+}
+
+.app-logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.2));
+}
+
+.section-card {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.card {
+  border-radius: 1rem;
+}
+
+.card-header {
+  background: rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.card-body {
+  color: #e9ecef;
+}
+
+.table-responsive {
+  background: rgba(33, 37, 41, 0.72);
+  border-radius: 0.75rem;
+  padding: 0.4rem;
+}
+
+.table {
+  color: #f3f6ff;
+}
+
+.table thead th {
+  background: rgba(13, 110, 253, 0.18);
+  color: #dbe6ff;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: rgba(255, 255, 255, 0.04);
+}
+
+.table-hover tbody tr:hover {
+  background-color: rgba(13, 110, 253, 0.16);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #3f8efc, #0d6efd);
+  border-color: #0d6efd;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background: linear-gradient(135deg, #1e6fff, #0b5ed7);
+}
+
+.btn-outline-secondary {
+  border-color: rgba(255, 255, 255, 0.45);
+  color: #e9ecef;
+}
+
+.btn-outline-secondary:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.btn-outline-primary {
+  color: #dbe6ff;
+  border-color: rgba(13, 110, 253, 0.45);
+}
+
+.btn-outline-primary:hover {
+  background: rgba(13, 110, 253, 0.14);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #f8f9fa;
+}
+
+.lead,
+.text-muted,
+.card-body p,
+.form-label {
+  color: rgba(255, 255, 255, 0.78);
+}
+
+a,
+.text-link {
+  color: #8ac6ff;
+}
+
+a:hover,
+.text-link:hover {
+  color: #cfe2ff;
+}
+
+.hero-card {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.modal-backdrop.show {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(10, 25, 56, 0.75);
+}
+
+@media (max-width: 576px) {
+  .card-header {
+    text-align: center;
+  }
+
+  .btn-toolbar {
+    justify-content: center;
+  }
+}
