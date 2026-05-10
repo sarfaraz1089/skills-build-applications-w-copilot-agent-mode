@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link, NavLink } from 'react-router-dom';
 import Activities from './components/Activities';
 import Leaderboard from './components/Leaderboard';
 import Teams from './components/Teams';
@@ -34,19 +34,19 @@ function App() {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <Link className="nav-link" to="/activities">Activities</Link>
+                <NavLink className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'} to="/activities">Activities</NavLink>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/leaderboard">Leaderboard</Link>
+                <NavLink className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'} to="/leaderboard">Leaderboard</NavLink>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/teams">Teams</Link>
+                <NavLink className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'} to="/teams">Teams</NavLink>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/users">Users</Link>
+                <NavLink className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'} to="/users">Users</NavLink>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/workouts">Workouts</Link>
+                <NavLink className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'} to="/workouts">Workouts</NavLink>
               </li>
             </ul>
           </div>

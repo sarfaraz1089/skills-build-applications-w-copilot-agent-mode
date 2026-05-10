@@ -16,9 +16,12 @@ const DataSection = ({ title, endpointPath, description }) => {
     return `${base}${endpointPath}`;
   }, [endpointPath]);
 
+  console.log(`${title} endpoint:`, endpoint);
+
   const loadData = useCallback(() => {
     setLoading(true);
     setError(null);
+    console.log(`Fetching ${title} data from:`, endpoint);
     fetch(endpoint)
       .then((res) => {
         if (!res.ok) {
@@ -28,6 +31,7 @@ const DataSection = ({ title, endpointPath, description }) => {
       })
       .then((data) => {
         const results = data.results || data;
+        console.log(`Fetched ${title}:`, results);
         setItems(Array.isArray(results) ? results : [results]);
       })
       .catch((err) => {
